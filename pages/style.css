@@ -444,110 +444,139 @@ footer {
   margin-top: 15px;
   font-family: "Copse", serif;
 }
-/* details sayfası buradan başlıyor. */
 
-.category {
-  color: #717171;
-}
-.activities-head {
-  padding: 3px 48px;
-}
-.activitie-head h1 {
-  font-family: "DM Serif Display", serif;
-  font-size: 35px;
-  color: rgb(28, 26, 26);
-}
-.activities-time {
-  display: flex;
-  justify-content: space-between;
-  color: #565151;
-  margin-bottom: 12px;
-}
-.share a {
-  font-size: 18px;
-}
-.share a:hover {
-  color: #7f07cf;
-}
+@media screen and (max-width: 480px) {
+  header {
+    height: 80px;
+    padding: 12px 0;
+  }
 
-.img {
-  padding: 3px 48px;
-}
-.img-box {
-  display: flex;
-  justify-content: center;
-}
-.img-box img {
-  border-radius: 8px;
-}
-.chair {
-  width: 100%;
-  height: 56px;
-  position: relative;
-}
-.chair #c-img {
-  width: 100%;
-  height: 56px;
-  border-radius: 0 56px 56px 0;
-}
-.chair button {
-  color: #414047;
-  font-size: large;
-  height: 56px;
-  padding-left: 16px;
-  padding-right: 16px;
-  z-index: 1;
-  position: absolute;
-  border: transparent;
-  border-top-right-radius: 56px;
-  border-bottom-right-radius: 56px;
-}
+  .head h1 {
+    font-size: 40px;
+  }
 
-.chair button i {
-  margin-left: 12px;
-  font-size: medium;
-  color: #2c2a2a;
-}
-.ticket {
-  background-color: #cee;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-}
+  .register {
+    width: 160px;
+  }
 
-.ticket select {
-  flex: 1;
-}
+  .btn-register,
+  .btn-login {
+    height: 40px;
+    font-size: 14px;
+  }
 
-.map {
-  color: #7f07cf;
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  .register a {
+    font-size: small;
+  }
 
-.modal-content {
-  display: block;
-  margin: 20px auto;
-  width: 1000px;
-  height: 1200px;
-  object-fit: contain;
-}
+  #search {
+    height: 32px;
+    width: 280px;
+    padding: 0 8px;
+    font-size: small;
+  }
 
-.close {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  cursor: pointer;
+  .filter-search #city {
+    font-size: small;
+    height: 32px;
+  }
+
+  .nav-ul {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-li a {
+    font-size: medium;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  .slide img {
+    height: 240px;
+    width: 100%;
+  }
+
+  .prev,
+  .next {
+    height: 32px;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+  }
+
+  .card {
+    width: 160px;
+  }
+
+  .card img {
+    height: 108px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 16px 0;
+  }
+
+  .follow {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .follow h1 {
+    font-size: 28px;
+  }
+
+  .follow span {
+    font-size: 14px;
+  }
+
+  .ct-social {
+    margin-top: 8px;
+    height: 24px;
+  }
+
+  .app {
+    margin-top: 8px;
+    height: 32px;
+  }
+
+  .about,
+  .help,
+  .work {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+
+  .about-con,
+  .help-con,
+  .work-con {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+  }
+
+  .sss-addition {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-ss {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
 }
